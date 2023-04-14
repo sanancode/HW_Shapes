@@ -11,6 +11,8 @@ namespace Week6_HW_Shapes.Main
 
             mainMenuProccess();
 
+            howManyProccessDone();
+
             Console.WriteLine("\n\tProgram ended...");
         }
 
@@ -81,6 +83,16 @@ namespace Week6_HW_Shapes.Main
                     ShapeCalculating.Square(areaPer);
                     break;
             }
+        }
+
+        public static void howManyProccessDone()
+        {
+            Console.WriteLine("\nHow many proccesses done?" +
+                $"\nCircle: {Circle.count} times" +
+                $"\nHexagon: {Hexagon.count}" +
+                $"\nRectangle: {Rectangle.count} times" +
+                $"\nSquare: {Square.count} times" +
+                $"\nTriangle: {Triangle.count} times");
         }
 
     }

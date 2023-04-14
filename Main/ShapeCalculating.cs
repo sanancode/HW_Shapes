@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Week6_HW_Shapes.MenuUtil;
 using Week6_HW_Shapes.Shapes;
 
 namespace Week6_HW_Shapes.Main
@@ -13,57 +14,57 @@ namespace Week6_HW_Shapes.Main
 
         public static void Triangle(int areaPer)
         {
-            if(areaPer == 1)
+            if (areaPer == 1)
             {
-                new Triangle().perimeter("Triangle");
+                new Triangle("Triangle").perimeter();
             }
             else
             {
-                new Triangle().area("Triangle");
+                new Triangle("Triangle").area();
             }
         }
         public static void Circle(int areaPer)
         {
             if (areaPer == 1)
             {
-                new Circle().perimeter("Circle");
+                new Circle("Circle").perimeter();
             }
             else
             {
-                new Circle().area("Circle");
+                new Circle("Circle").area();
             }
         }
         public static void Hexagon(int areaPer)
         {
             if (areaPer == 1)
             {
-                new Hexagon().perimeter("Hexagon");
+                new Hexagon("Hexagon").perimeter();
             }
             else
             {
-                new Hexagon().area("Hexagon");
+                new Hexagon("Hexagon").area();
             }
         }
         public static void Rectangle(int areaPer)
         {
             if (areaPer == 1)
             {
-                new Rectangle().perimeter("Rectangle");
+                new Rectangle("Rectangle").perimeter();
             }
             else
             {
-                new Rectangle().area("Rectangle");
+                new Rectangle("Rectangle").area();
             }
         }
         public static void Square(int areaPer)
         {
             if (areaPer == 1)
             {
-                new Square().perimeter("Square");
+                new Square("Square").perimeter();
             }
             else
             {
-                new Square().area("Square");
+                new Square("Square").area();
             }
         }
     }

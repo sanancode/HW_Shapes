@@ -8,7 +8,13 @@ namespace Week6_HW_Shapes.Main
 {
     internal abstract class Shape
     {
-        public abstract void perimeter(string shapename);
-        public abstract void area(string shapename);
+        public string Name { get; set;}
+        public Shape(string name)
+        {
+            this.Name = name;
+        }
+
+        public abstract void perimeter();
+        public abstract void area();
     }
 }
